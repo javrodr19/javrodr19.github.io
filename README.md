@@ -15,6 +15,7 @@ This repository hosts the main landing page for my collection of free, privacy-f
 | :--- | :--- | :--- |
 | **HEIC Converter** | Convert HEIC/HEIF images to JPG instantly. | [Launch](https://javrodr19.github.io/heic-to-jpg-free-converter/) |
 | **Thumbnail Grabber** | Download YouTube Thumbnails in HD/4K. | [Launch](https://javrodr19.github.io/thumbnail-grabber/) |
+| **Image Compressor** | Lossless compression for WebP/PNG/JPG. | [Launch](https://javrodr19.github.io/image-compressor/) |
 
 ## 🚀 Technologies
 
