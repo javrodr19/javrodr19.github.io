@@ -1,0 +1,141 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --accent: #bb86fc;
+    --btn-color: #03dac6;
+    --btn-hover: #01b4a4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 60px 0 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h1 span { color: var(--accent); }
+
+header p { color: var(--text-secondary); font-size: 1.1rem; }
+
+/* Grid System */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Cards */
+.tool-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: var(--accent);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.tool-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.tool-card p {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.btn {
+    margin-top: auto;
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    color: var(--btn-color);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.tool-card:hover .btn {
+    background-color: var(--btn-color);
+    color: #000;
+}
+
+/* Coming Soon Card */
+.coming-soon {
+    opacity: 0.6;
+    cursor: default;
+}
+.coming-soon:hover {
+    transform: none;
+    border-color: #333;
+    box-shadow: none;
+}
+.coming-soon .btn { display: none; }
+
+/* Ads */
+.ad-container {
+    margin: 40px auto;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-left: 10px;
+}
